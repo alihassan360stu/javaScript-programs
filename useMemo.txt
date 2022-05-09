@@ -1,0 +1,24 @@
+import { useMemo, useState } from "react"
+
+ let A=()=>{
+    const [sub,csub]=useState(0);
+    const [inc,cinc]=useState(0);
+
+    const showAllTime=useMemo(()=>{
+        console.log("ali hassan is best");
+    },[sub])
+
+    return (
+        <>
+            <button onClick={()=>{cinc(inc+1)}}>increament</button>
+            <h1>{inc}</h1>
+
+            <br/>
+            <button onClick={()=>{csub(sub-1)}}>decreament</button>
+            <h1>{sub}</h1>
+            <h3>{showAllTime}</h3>
+        </>
+    )
+ }
+
+ export default A;

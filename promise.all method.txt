@@ -1,0 +1,30 @@
+import axios from "axios";
+
+let App=()=>{
+
+async function fun()
+{
+// await axios.delete("http://localhost:3333/posts/33");
+// let data =await axios.get("http://localhost:3333/posts")
+// console.log(data);
+
+
+let array1=await axios.post('http://localhost:3333/posts', {
+    firstName: 'Fred ahsdsfcbsd',
+    lastName: 'Flintstone cu\sgsdyukgkfa'
+  })
+  let data1 =await axios.get("http://localhost:3333/posts");
+ let d= await Promise.all([array1,data1]);
+ console.log(d[0]);
+ console.log(d[1]);
+   
+}
+
+    return(
+        <>
+            <button onClick={fun}>click</button>
+        </>
+    )
+}
+
+export default App;

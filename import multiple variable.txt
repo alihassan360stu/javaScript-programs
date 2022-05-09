@@ -1,0 +1,42 @@
+index .js
+
+import react from "react"
+import reactDom from "react-dom"
+import arr, { raees, fatima, fun } from "./Alldata"
+
+// import EnterData from "./Enterdata";
+import "./index.css";
+
+reactDom.render(
+    <>
+        <h1 className="student">STUDENT LIST ENTRY</h1>
+
+
+        {arr}and{raees}<br />{fatima}and<br />
+        {fun()}
+    </> ,
+    document.getElementById("root")
+
+)
+
+
+
+                                    Alldata
+
+
+
+let arr="ali ahssan";
+
+let raees="fatima raees";
+let fatima="i ";
+
+function fun()
+{return(
+    <>
+    <h1>my name is ali hassan</h1>
+    <h1>i love y0u</h1>
+    </>
+);
+}
+export default arr;
+export {raees,fatima,fun};

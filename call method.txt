@@ -1,0 +1,12 @@
+let aliData={
+    name:"ali hassan",
+    id:"bsse-21f-011",
+    ali:function(){ console.log(`my name is ${this.name} id is ${this.id} `); }
+}
+let secondData={
+    name:"yaseen",
+    id:"bsse-21f-070"
+}
+aliData.ali.call(secondData); 
+// is used function from other object  function here aliData 
+// ali function used by secondData object//

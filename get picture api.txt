@@ -1,0 +1,29 @@
+
+const fetching =async()=>{
+    let hassan1=document.getElementById("ali");
+    let data = await fetch("https://jsonplaceholder.typicode.com/photos");
+    let hassan = await data.json();
+   var data1;
+
+//    console.log(hassan[1].url);
+//    console.log(hassan[1].url);
+let h1="PS.jpg";
+
+      let h=`<img src="${h1}" alt="#">`
+
+      hassan1.innerHTML=h;
+
+    hassan.map((value,index)=>{
+
+        if(index<=1000)
+        {
+            data1+=`<img src="${value.url}" alt="#">`
+            hassan1.innerHTML=data1;
+        }
+
+        
+    
+    })
+}
+
+fetching();

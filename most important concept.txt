@@ -1,0 +1,2 @@
+1 . Prop drilling  == context api is the solution of Prop drilling ..  (component a props to b props to c props to d and needComponentProps).
+2 . Context API is designed to share “global” data.

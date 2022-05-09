@@ -1,0 +1,13 @@
+Promises
+Promises are used to handle asynchronous operations in JavaScript. and used to avoid callbeck hell problem.
+s
+Benefits of Promises 
+Improves Code Readability
+Better handling of asynchronous operation
+Better Error Handling
+
+A Promise has four states: 
+fulfilled: Action related to the promise succeeded
+rejected: Action related to the promise failed
+pending: Promise is still pending i.e. not fulfilled or rejected yet
+settled: Promise has fulfilled or rejected

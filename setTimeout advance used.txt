@@ -1,0 +1,19 @@
+  setTimeout(function (){
+      
+    var arr=[1,2,3,4,5,6];
+    console.log(arr);
+
+    setTimeout((ha)=>{
+        let obj={
+            name:"ali hassan",
+            fname:"saadat ali"
+        };
+        console.log(`roll is ${ha} and name is ${obj.name} and father name is ${obj.fname}`);
+    setTimeout(()=>{
+        let age="24th";
+        console.log(`roll is ${ha} and name is ${obj.name} and father name is ${obj.fname
+        } and age is ${age}`);
+    },2000,ha)
+    },2000,arr[1])
+
+},2000)

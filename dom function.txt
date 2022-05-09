@@ -1,0 +1,39 @@
+// let element=document.getElementsByClassName("mainContainer");
+// let element=document.getElementById("alihassan")
+// let element=document.querySelector("#alihassan");
+// let element=document.querySelector(".mainContainer");
+// element=element.children;
+// element=element.classList;
+// element=element.className;// return all name return in string format
+// element =element.parentElement; its return the parent element 
+// element =element.childElementCount;
+// element =element.childNodes;
+// element =element.firstElementChild;
+// element=element.lastElementChild;
+// element=element.nextElementSibling;
+// element=element.hasChildNodes();
+// let ele=document.createElement("h1");
+// ele.setAttribute("color","");
+// ele.className="hassan";
+// ele.id="babar";
+// ele.innerText="bababababababababa";
+// let create_text_node=document.createTextNode("hello i am good and how are you now")
+// ele.appendChild(create_text_node);
+// element.appendChild(ele);
+// element=element.children[0].remove();
+// let insert=element.children[1];
+// element.insertBefore(ele,insert);
+// insert before syntax 
+// let insert=element.children[1];
+// element.insertBefore(ele,insert);
+// let inse="<h2>my name is ali hassan </h2>";
+// element.insertAdjacentHTML("beforeend",inse); // this is most important function insertadcecentHTML();
+// let ele=document.createElement("h1");
+// ele.innerText="hi fatima jee ";
+// element.insertAdjacentElement("beforeend",ele)
+// let n=document.querySelector(".MinFunction");
+// let n1=n.style.top.value;
+
+
+
+

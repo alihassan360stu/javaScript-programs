@@ -1,0 +1,45 @@
+import react, { useState } from "react";
+import "./index.css";
+
+
+const NewDATA=()=>{
+let [value ,SETdata]=useState("ali hssan");
+
+function fun()
+{
+    value="babar azam ";
+    SETdata(value);
+    console.log("i am ali ahssan");
+}
+    return (
+        <>
+
+        <h1>{value}</h1>
+        <button onClick={fun}>click me </button>
+
+        </>
+    )
+}
+export default NewDATA;
+
+
+
+
+
+import reactDom from "react-dom"
+// import App from "./App";
+import NewDATA from "./NewDAta";
+
+import "./index.css";
+
+reactDom.render(
+    <>
+        {/* <h1 className="student">STUDENT LIST ENTRY</h1> */}
+
+        
+      <NewDATA/>
+         
+    </> ,
+    document.getElementById("root")
+
+)

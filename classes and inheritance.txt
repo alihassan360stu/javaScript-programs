@@ -1,0 +1,32 @@
+class mobile {
+    constructor(version,name)
+    {
+        this.version=version;
+        this.name=name;
+    }
+ 
+    ali()
+    {
+        document.write(`mobile ver ${this.version} and name ${this.name}`)
+    }
+}
+
+class qMobile extends mobile{
+    constructor(color)
+    {
+        super("10.4.5","nokia")
+        this.color=color;
+    }
+    app()
+    {
+    document.write(`mobile ver ${this.version} name is ${this.name} 
+     and mobile color is ${this.color}`)
+    }
+}
+
+
+let mobileObject =new qMobile("orange");
+let qMobileObject =new qMobile("orange");
+
+qMobileObject.app();
+mobileObject.ali();

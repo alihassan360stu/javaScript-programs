@@ -1,0 +1,27 @@
+
+import { useState, useEffect, useRef } from react;
+
+
+
+const App = () = {
+  const [ab,bc]=useState(false);
+  var good=useRef();
+  function submit(a)
+  {
+    a.preventDefault();
+    (good.current.value===) alert(please complete fill)  bc(true); 
+  }
+
+return(
+  
+  form onSubmit={submit} id=ali
+    input type=text  ref={good}
+  form
+  h1 my name is {(ab===true)good.current.valuenull}h1
+  
+)
+
+
+}
+
+export default App;

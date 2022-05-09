@@ -1,0 +1,51 @@
+class car{
+    constructor(color,speed)
+    {
+        this.color=color;
+        this.speed=speed;
+    }
+
+    applingBreak()
+    {
+        console.log("appling brake please ");
+    }
+}
+
+class newDesingCar extends car{
+    constructor(black,horan)
+    {
+    super("white","120km");    
+    this.color=black;
+    this.horan=horan;
+    }
+
+    speedip()
+    {
+        console.log("please increase the speed of car ");
+    }
+
+    speedDown()
+    {
+        console.log("please decrease the speed of car");
+    }
+
+}
+
+class bike extends newDesingCar{
+    constructor()
+    {
+        super("orange ","very fast ");
+        console.log("working to create new car ");
+    }
+
+    usingAllProperties()
+    {
+        console.log("car color "+this.color);
+        // console.log("car speed "+this.speed);
+        console.log("horan is "+this.horan);
+
+    }
+}
+
+let obj=new bike();
+obj.usingAllProperties();

@@ -1,0 +1,26 @@
+import { type } from "@testing-library/user-event/dist/type";
+import { useReducer} from "react";
+
+function reduce (data,action)
+{
+if(action==="inc"){return data+1}
+else{return data-=1;}
+
+}
+
+let App = function () {
+    const [data, setdata] = useReducer(reduce,0)
+
+    return (
+        <>
+
+            <button onClick={ ()=>{setdata(type="inc")}}> increment </button>
+            <button onClick={ ()=>{setdata(type="dec")}} > decrement </button>
+            <br />
+            <h1>counter is {data}</h1>
+
+        </>
+    )
+}
+
+export default App;
